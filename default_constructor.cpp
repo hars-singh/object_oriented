@@ -17,7 +17,7 @@ class book
    {
      cout<<"This is not a miracle"<<endl;
    }
-   book(string name ,int age =10)
+   book(string name ,int age =10)/*constructor with default parameter*/
    {
      cout<<name<<endl;
      cout<<age<<endl;
@@ -45,6 +45,7 @@ int main()
   book *book1 =new book();
   book *book2 =new book("Harsh Singh",54);
   book *book3=new book(34);
+  book *book4 =new book("Harsh Singh");/*In this case constructor which is having age as a default parameter will be selected*/
   book1->setage(25);
   book1->takeage();
   return 0;
