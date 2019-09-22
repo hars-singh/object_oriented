@@ -10,8 +10,8 @@ void setage(int iage){age =iage;}
 
 class puppy:private student{
   public:
-  student :: name;
-  student :: age;
+  student :: name;/*Now as it is under umbrella of public sso name will behave like public variable*/
+  student :: age;/*age will also behave same*/
 int id;
 void setid(int iid){id =iid;}
 void display(){
