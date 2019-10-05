@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class marks{
+int subjects[3];
+public:
+marks( int m1, int m2, int m3)
+{
+	subjects[0]=m1;
+	subjects[1]=m2;
+	subjects[2]=m3;
+	}	
+	
+	int operator[](int position)/*Non static member as well as no friend operator can be included*/
+	{
+		return subjects[position];
+	}
+	
+};
+
+int main()
+{
+	
+	marks anil(20, 30,40);
+	cout<<anil[0]<<endl<<anil[1]<<endl<<anil[2]<<endl;
+	return 0;
+}
